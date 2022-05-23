@@ -1,0 +1,19 @@
+@font-face{
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/opensans/OpenSans-regular.woff2) format('woff2'),
+         url(../fonts/opensans/OpenSans-regular.woff) format('woff'),
+         url(../fonts/opensans/OpenSans-bold.woff2) format('woff2'),
+         url(../fonts/opensans/OpenSans-bold.woff) format('woff'),
+}
+
+@font-face{
+    font-family: 'Marta';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/marta/Marta-Regular.woff2) format('woff2'),
+         url(../fonts/marta/Marta-Regular.woff) format('woff'),
+         url(../fonts/marta/Marta-Bold.woff2) format('woff2'),
+         url(../fonts/marta/Marta-Bold.woff) format('woff'),
+}
