@@ -7,18 +7,6 @@ body {
     scroll-behavior: smooth;
   }
 
-html::-webkit-scrollbar {
-    width: 5px; /* ширина для вертикального скролла */
-    height: 0px; /* высота для горизонтального скролла */
-    background-color: rgb(243, 243, 243); /* цвет фона */
-    border-radius: 10px;
-}
-
-html::-webkit-scrollbar-thumb {
-    background-color: rgb(175, 175, 175);
-    border-radius: 10px;
-}
-
 *,
 *:before,
 *:after {
@@ -26,6 +14,7 @@ html::-webkit-scrollbar-thumb {
   }
 
 body{
+    min-width: 320px;
     background-color: #f8f8f8;
     font-family: $fonts_OS;
     font-style: normal;
