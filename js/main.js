@@ -1,4 +1,5 @@
 $(function(){
+
     $('.slider-header').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -12,9 +13,7 @@ $(function(){
         speed: 2000,
         fade: true
     });
-  });
 
-  $(function(){
     $('.today__slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -23,9 +22,7 @@ $(function(){
         arrows: false,
         dots: true
     });
-  });
 
-  $(function(){
     $('.clients__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -34,9 +31,7 @@ $(function(){
         arrows: false,
         dots: true
     });
-  });
 
-  $(function(){
     $('.stories__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -45,9 +40,7 @@ $(function(){
         arrows: false,
         dots: true
     });
-  });
 
-  $(function(){
     $('.corporate__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -58,9 +51,7 @@ $(function(){
         arrows: false,
         dots: true
     });
-  });
 
-  $(function(){
     $('.company-management__slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -69,9 +60,7 @@ $(function(){
         arrows: false,
         dots: true
     });
-  });
 
-  $(function(){
     $('.team__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -80,9 +69,7 @@ $(function(){
         arrows: false,
         dots: true
     });
-  });
- 
-  $(function(){
+
     $('.team-all__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -91,20 +78,8 @@ $(function(){
         arrows: false,
         dots: true
     });
+
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   $(window).scroll(function(){
