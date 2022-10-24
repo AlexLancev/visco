@@ -24,12 +24,40 @@
             
                                 <div class="top-header__language language">
                                     <b>ru</b>
-                                    <a href="#">en</a>
+                                    <a>en</a>
                                 </div>
             
-                                <a href="#" class="top-header__feedback feedback">
+                                <button data-href="feedback" class="top-header__feedback feedback popup-link">
                                     <b>Связаться с нами</b>
-                                </a>
+                                </button>
+
+                                <!-- modal-start -->
+                                <div id="feedback" class="popup" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content">
+                                            <button type="button" class="popup__close close-popup"
+                                                aria-label="закрыть модальное окно"></button>
+                                            
+                                                <form class="popup-form" action="#" method="post">
+                                                    <fieldset class="popup-form__fieldset">
+                                                        <legend class="popup-form__title">Обратная связь</legend>
+                                                        <p class="popup-form__text">
+                                                            Если у вас возникли вопросы или предложения, вы всегда можете написать нам на почту! Или оставьте номер вашего телефона, наш менеджер свяжется с вами в течении одного рабочего дня.
+                                                        </p>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input class="popup-form__input" type="text" name="имя" placeholder="Ваше имя">
+                                                        <input class="popup-form__input" type="tel" name="Номер телефона" placeholder="Ваш телефон">
+                                                        <input class="popup-form__input" type="email" name="Электронная почта" placeholder="E-mail">
+                                                        <textarea class="popup-form__textarea" name="сообщение" placeholder="Ваше сообщение"></textarea>
+                                                        <button class="popup-form__btn btn" type="submit">Отправить сообщение</button>
+                                                    </fieldset>
+                                                </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
             
                             </div>
         
@@ -101,7 +129,7 @@
                         <ul class="pagination__list">
     
                             <li class="pagination__item">
-                                <a href="#" class="pagination__link">
+                                <a href="index.html" class="pagination__link">
                                     Главная
                                 </a>
                             </li>
@@ -120,7 +148,7 @@
                         <div class="year"><span>2017</span></div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-1.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-1.jpg);">
                                 
                                     <p class="projects-all__text">
                                         <small>Бизнес центр</small>
@@ -132,7 +160,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-2.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-2.jpg);">
                                 
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -144,7 +172,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-3.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-3.jpg);">
                     
                                     <p class="projects-all__text">
                                         <span>
@@ -157,7 +185,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-4.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-4.jpg);">
                     
                                     <p class="projects-all__text">
                                         <span>Дом Пушнины</span>
@@ -168,7 +196,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-5.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-5.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -180,7 +208,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-6.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-6.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -192,7 +220,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-7.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-7.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -204,7 +232,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-8.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-8.jpg);">
                     
                                     <p class="projects-all__text">
                                         <span>Обуховский завод</span>
@@ -215,7 +243,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-9.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2017/projects-9.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -233,7 +261,7 @@
                         <div class="year"><span>2016</span></div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-1.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-1.jpg);">
                                 
                                     <p class="projects-all__text">
                                         <small>Торговый комплекс</small>
@@ -245,7 +273,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-2.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-2.jpg);">
                                 
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -257,7 +285,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-3.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-3.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Торговый комплекс </small>
@@ -269,7 +297,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-4.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-4.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -281,7 +309,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-5.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-5.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -293,7 +321,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-6.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-6.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -305,7 +333,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-7.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-7.jpg);">
                     
                                     <p class="projects-all__text">
                                         <span>Дом Журналиста</span>
@@ -316,7 +344,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-8.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-8.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -328,7 +356,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-9.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2016/projects-9.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -346,7 +374,7 @@
                         <div class="year"><span>2015</span></div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-1.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-1.jpg);">
                                 
                                     <p class="projects-all__text">
                                         <span>Музей науки и техники</span>
@@ -357,7 +385,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-2.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-2.jpg);">
                                 
                                     <p class="projects-all__text">
                                         <small>Торговый комплекс</small>
@@ -369,7 +397,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-3.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-3.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Апартамент-отель</small>
@@ -381,7 +409,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-4.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-4.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Магазин бытовой техники и электроники</small>
@@ -393,7 +421,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-5.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-5.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -405,7 +433,7 @@
                         </div>
 
                         <div class="projects-all__column">
-                            <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-6.jpg);">
+                            <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2015/projects-6.jpg);">
                     
                                     <p class="projects-all__text">
                                         <small>Жилой комплекс</small>
@@ -419,9 +447,9 @@
                     </div>
 
 
-                            <a class="projects__hidden btn btn__hidden">
+                            <button class="projects__hidden btn btn__hidden">
                                 Показать все
-                            </a>
+                            </button>
 
 
                     <div class="box__visible">
@@ -430,7 +458,7 @@
                             <div class="year"><span>2014</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2014/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2014/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <span>NESTLE</span>
@@ -441,7 +469,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2014/projects-2.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2014/projects-2.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <small>Жилой комплекс</small>
@@ -453,7 +481,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2014/projects-3.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2014/projects-3.jpg);">
                         
                                         <p class="projects-all__text">
                                             <small>Жилой комплекс</small>
@@ -471,7 +499,7 @@
                             <div class="year"><span>2011</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <span>Жилой район в Петрозаводске</span>
@@ -482,7 +510,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-2.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-2.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <small>Торговый центр</small>
@@ -494,7 +522,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-3.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-3.jpg);">
                         
                                         <p class="projects-all__text">
                                             <small>Завод</small>
@@ -506,7 +534,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-4.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-4.jpg);">
                         
                                         <p class="projects-all__text">
                                             <small>Жилой комплекс</small>
@@ -518,7 +546,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-5.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-5.jpg);">
                         
                                         <p class="projects-all__text">
                                             <small>Шинный центр</small>
@@ -530,7 +558,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-6.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-6.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Главный штаб Государственного Эрмитажа</span>
@@ -541,7 +569,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-7.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-7.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Жилые дома на ул. Оптиков</span>
@@ -552,7 +580,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-8.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-8.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Дирол Кэдбери</span>
@@ -563,7 +591,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-9.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2011/projects-9.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>ЮПМ-Кюммене Чудово</span>
@@ -580,7 +608,7 @@
                             <div class="year"><span>2007</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <span>Элитный жилой комплекс на улице Жуковского</span>
@@ -591,7 +619,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-2.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-2.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <span>Жилой дом на Большой Морской</span>
@@ -602,7 +630,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-3.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-3.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Лабораторный корпус ИЭФБ им. Сеченова РАН</span>
@@ -613,7 +641,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-4.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-4.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Офис в Казани</span>
@@ -624,7 +652,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-5.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2007/projects-5.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Пестово-Ново</span>
@@ -641,7 +669,7 @@
                             <div class="year"><span>2004</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2004/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2004/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <small>Торговый центр</small>
@@ -653,7 +681,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2004/projects-2.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2004/projects-2.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <small>Косметическая фабрика</small>
@@ -665,7 +693,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2004/projects-3.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2004/projects-3.jpg);">
                         
                                         <p class="projects-all__text">
                                             <small>Завод</small>
@@ -683,7 +711,7 @@
                             <div class="year"><span>2001</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2001/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-2001/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <span>Жилой дом на Большой Московской</span>
@@ -700,7 +728,7 @@
                             <div class="year"><span>1999</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <span>Невский Международный центр</span>
@@ -711,7 +739,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-2.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-2.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <small>Завод</small>
@@ -723,7 +751,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-3.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-3.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Международный Московский банк - Петербургское отделение</span>
@@ -734,7 +762,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-4.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1999/projects-4.jpg);">
                         
                                         <p class="projects-all__text">
                                             <span>Жилой дом на Захарьевской улице</span>
@@ -751,7 +779,7 @@
                             <div class="year"><span>1996</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1996/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1996/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <small>Ресторан</small>
@@ -763,7 +791,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1996/projects-2.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1996/projects-2.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <small>Автосалон</small>
@@ -775,7 +803,7 @@
                             </div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1996/projects-3.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1996/projects-3.jpg);">
                         
                                         <p class="projects-all__text">
                                             <small>Завод</small>
@@ -792,7 +820,7 @@
                             <div class="year"><span>1994</span></div>
     
                             <div class="projects-all__column">
-                                <a href="#" class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1994/projects-1.jpg);">
+                                <a class="projects-all__link" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/projects-all/projects-1994/projects-1.jpg);">
                                     
                                         <p class="projects-all__text">
                                             <span>Дворец Президента Татарстана</span>
@@ -817,10 +845,10 @@
                         </div>
                         <div class="footer__phone">
                             <span>Центральный офис:</span>
-                            <a href="tel:78123241936" class="footer__phone-link">+7 (812) 324-19-36</a>
+                            <a href="tel:78123241936" aria-label="Набрать мобильный номер телефона обратной связи" class="footer__phone-link">+7 (812) 324-19-36</a>
                         </div>
                         <div class="footer__developer developer">
-                            <a href="#" class="footer__dev-link">
+                            <a href="https://github.com/AlexLancev" aria-label="Ссылка на профиль в гитхаб, разработчика этого сайта" class="footer__dev-link">
                                 Разработка AlexLanc
                             </a>
                         </div>
@@ -834,6 +862,11 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/scroll-animation.js"></script>
+        <script src="js/scroll-menu.js"></script>
+        <script src="js/visible-content.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/tabs.js"></script>
         <script src="js/main.js"></script>
 
     </body>

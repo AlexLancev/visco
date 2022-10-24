@@ -25,12 +25,40 @@
         
                             <div class="top-header__language language">
                                 <b>ru</b>
-                                <a href="#">en</a>
+                                <a>en</a>
                             </div>
         
-                            <a href="#" class="top-header__feedback feedback">
+                            <button data-href="feedback" class="top-header__feedback feedback popup-link">
                                 <b>Связаться с нами</b>
-                            </a>
+                            </button>
+
+                             <!-- modal-start -->
+                            <div id="feedback" class="popup" role="alert">
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <button type="button" class="popup__close close-popup"
+                                            aria-label="закрыть модальное окно"></button>
+                                        
+                                            <form class="popup-form" action="#" method="post">
+                                                <fieldset class="popup-form__fieldset">
+                                                    <legend class="popup-form__title">Обратная связь</legend>
+                                                    <p class="popup-form__text">
+                                                        Если у вас возникли вопросы или предложения, вы всегда можете написать нам на почту! Или оставьте номер вашего телефона, наш менеджер свяжется с вами в течении одного рабочего дня.
+                                                    </p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input class="popup-form__input" type="text" name="имя" placeholder="Ваше имя">
+                                                    <input class="popup-form__input" type="tel" name="Номер телефона" placeholder="Ваш телефон">
+                                                    <input class="popup-form__input" type="email" name="Электронная почта" placeholder="E-mail">
+                                                    <textarea class="popup-form__textarea" name="сообщение" placeholder="Ваше сообщение"></textarea>
+                                                    <button class="popup-form__btn btn" type="submit">Отправить сообщение</button>
+                                                </fieldset>
+                                            </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal-end -->
         
                         </div>
     
@@ -103,7 +131,7 @@
                         <ul class="pagination__list">
     
                             <li class="pagination__item">
-                                <a href="#" class="pagination__link">
+                                <a href="index.html" class="pagination__link">
                                     Главная
                                 </a>
                             </li>
@@ -142,9 +170,9 @@
                         </div>
 
                         <div class="visco-numbers">
-                            <h3 class="visco-numbers__title title">
+                            <h2 class="visco-numbers__title title">
                                 VISKO в цифрах
-                            </h3>
+                            </h2>
                             <div class="visco-numbers__body">
 
                                 <div class="visco-numbers__column">
@@ -232,7 +260,7 @@
 
                                     <div class="company-group__info">
                                         <figure class="company-group__images">
-                                            <img src="images/company/company-main/visko-msk.png" alt="">
+                                            <img src="images/company/company-main/visko-msk.png" alt="ООО «ВИСКО-МСК»">
                                         </figure>
                                         <h4 class="company-group__heading heading">
                                             ООО «ВИСКО-МСК»
@@ -244,7 +272,7 @@
     
                                     <div class="company-group__info">
                                         <figure class="company-group__images">
-                                            <img src="images/company/company-main/rca-visko.png" alt="">
+                                            <img src="images/company/company-main/rca-visko.png" alt="ООО «Региональный Центр Автоматизации ВИСКО»">
                                         </figure>
                                         <h4 class="company-group__heading heading">
                                             ООО «Региональный Центр Автоматизации ВИСКО»
@@ -316,10 +344,10 @@
                         </div>
                         <div class="footer__phone">
                             <span>Центральный офис:</span>
-                            <a href="tel:78123241936" class="footer__phone-link">+7 (812) 324-19-36</a>
+                            <a href="tel:78123241936" aria-label="Набрать мобильный номер телефона обратной связи" class="footer__phone-link">+7 (812) 324-19-36</a>
                         </div>
                         <div class="footer__developer developer">
-                            <a href="#" class="footer__dev-link">
+                            <a href="https://github.com/AlexLancev" aria-label="Ссылка на профиль в гитхаб, разработчика этого сайта" class="footer__dev-link">
                                 Разработка AlexLanc
                             </a>
                         </div>
@@ -332,6 +360,10 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/scroll-animation.js"></script>
+        <script src="js/scroll-menu.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/tabs.js"></script>
         <script src="js/main.js"></script>
 
     </body>

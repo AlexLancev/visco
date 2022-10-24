@@ -24,12 +24,40 @@
         
                             <div class="top-header__language language">
                                 <b>ru</b>
-                                <a href="#">en</a>
+                                <a>en</a>
                             </div>
-        
-                            <a href="#" class="top-header__feedback feedback">
+
+                            <button data-href="feedback" class="top-header__feedback feedback popup-link">
                                 <b>Связаться с нами</b>
-                            </a>
+                            </button>
+
+                             <!-- modal-start -->
+                            <div id="feedback" class="popup" role="alert">
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <button type="button" class="popup__close close-popup"
+                                            aria-label="закрыть модальное окно"></button>
+                                        
+                                            <form class="popup-form" action="#" method="post">
+                                                <fieldset class="popup-form__fieldset">
+                                                    <legend class="popup-form__title">Обратная связь</legend>
+                                                    <p class="popup-form__text">
+                                                        Если у вас возникли вопросы или предложения, вы всегда можете написать нам на почту! Или оставьте номер вашего телефона, наш менеджер свяжется с вами в течении одного рабочего дня.
+                                                    </p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input class="popup-form__input" type="text" name="имя" placeholder="Ваше имя">
+                                                    <input class="popup-form__input" type="tel" name="Номер телефона" placeholder="Ваш телефон">
+                                                    <input class="popup-form__input" type="email" name="Электронная почта" placeholder="E-mail">
+                                                    <textarea class="popup-form__textarea" name="сообщение" placeholder="Ваше сообщение"></textarea>
+                                                    <button class="popup-form__btn btn" type="submit">Отправить сообщение</button>
+                                                </fieldset>
+                                            </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal-end -->
         
                         </div>
     
@@ -103,10 +131,10 @@
                                 <h1>
                                     <small>Вместе с нами</small><br>Построй свою<br> карьеру с VISKO
                                 </h1>
-                                <p class="header-body__text trd _anim-items _anim-no-hide">
+                                <h2 class="header-body__text trd _anim-items _anim-no-hide">
                                     Наши сотрудники преданы своему делу. И мы ищем <br> единомышленников для совместных побед.
-                                </p>
-                                <a class="header-body__link" href="#"><span></span>Подробнее</a>
+                                </h2>
+                                <a class="header-body__link" href="#work"><span></span>Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +144,7 @@
                 <div class="container">
 
 
-                    <div class="work tr _anim-items _anim-no-hide">
+                    <div id="work" class="work tr _anim-items _anim-no-hide">
                         <h3 class="work__title title">
                             Работа в VISKO
                         </h3>
@@ -291,7 +319,7 @@
 
                                         <div class="tabs-container tabs-container--active" id="tab-1">
 
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Инженер сметного отдела</b>
                                                     <small>ИТР</small>
@@ -309,7 +337,7 @@
                                                 </p>
                                             </a>
 
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Монтажник спринклерных систем</b>
                                                     <small>Монтаж</small>
@@ -327,7 +355,7 @@
                                                 </p>
                                             </a>
 
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Монтажник санитарно-технических систем</b>
                                                     <small>Монтаж</small>
@@ -342,7 +370,7 @@
                                                 </p>
                                             </a>
                                             
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Электромонтажник по слаботочным сетям</b>
                                                     <small>Монтаж</small>
@@ -364,7 +392,7 @@
 
                                         <div class="tabs-container" id="tab-2">
 
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Инженер сметного отдела</b>
                                                     <small>ИТР</small>
@@ -386,7 +414,7 @@
 
                                         <div class="tabs-container" id="tab-3">
 
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Монтажник спринклерных систем</b>
                                                     <small>Монтаж</small>
@@ -404,7 +432,7 @@
                                                 </p>
                                             </a>
 
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Монтажник санитарно-технических систем</b>
                                                     <small>Монтаж</small>
@@ -419,7 +447,7 @@
                                                 </p>
                                             </a>
                                             
-                                            <a href="#" class="join-team__item">
+                                            <a class="join-team__item">
                                                 <p class="join-team__header">
                                                     <b>Электромонтажник по слаботочным сетям</b>
                                                     <small>Монтаж</small>
@@ -453,7 +481,7 @@
                                 </h3>
                                 <p class="suitable-vacancies__text">
                                     Мы постоянно находимся в поиске профессионалов сферы проектирования и монтажа инженерных сетей. Вы можете направить резюме к нам на почту
-                                    <a href="#">job@visko.ru</a>
+                                    <a href="mailto:job@visko.ru" aria-label="Вы можете направить резюме к нам на электронную почту">job@visko.ru</a>
                                 </p>
                             </div>
 
@@ -477,10 +505,10 @@
                         </div>
                         <div class="footer__phone">
                             <span>Центральный офис:</span>
-                            <a href="tel:78123241936" class="footer__phone-link">+7 (812) 324-19-36</a>
+                            <a href="tel:78123241936" aria-label="Набрать мобильный номер телефона обратной связи" class="footer__phone-link">+7 (812) 324-19-36</a>
                         </div>
                         <div class="footer__developer developer">
-                            <a href="#" class="footer__dev-link">
+                            <a href="https://github.com/AlexLancev" aria-label="Ссылка на профиль в гитхаб, разработчика этого сайта" class="footer__dev-link">
                                 Разработка AlexLanc
                             </a>
                         </div>
@@ -494,6 +522,10 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/scroll-animation.js"></script>
+        <script src="js/scroll-menu.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/tabs.js"></script>
         <script src="js/main.js"></script>
 
     </body>

@@ -24,12 +24,40 @@
         
                             <div class="top-header__language language">
                                 <b>ru</b>
-                                <a href="#">en</a>
+                                <a>en</a>
                             </div>
         
-                            <a href="#" class="top-header__feedback feedback">
+                            <button data-href="feedback" class="top-header__feedback feedback popup-link">
                                 <b>Связаться с нами</b>
-                            </a>
+                            </button>
+
+                            <!-- modal-start -->
+                            <div id="feedback" class="popup" role="alert">
+                                <div class="popup__body">
+                                    <div class="popup__content">
+                                        <button type="button" class="popup__close close-popup"
+                                            aria-label="закрыть модальное окно"></button>
+                                        
+                                            <form class="popup-form" action="#" method="post">
+                                                <fieldset class="popup-form__fieldset">
+                                                    <legend class="popup-form__title">Обратная связь</legend>
+                                                    <p class="popup-form__text">
+                                                        Если у вас возникли вопросы или предложения, вы всегда можете написать нам на почту! Или оставьте номер вашего телефона, наш менеджер свяжется с вами в течении одного рабочего дня.
+                                                    </p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <input class="popup-form__input" type="text" name="имя" placeholder="Ваше имя">
+                                                    <input class="popup-form__input" type="tel" name="Номер телефона" placeholder="Ваш телефон">
+                                                    <input class="popup-form__input" type="email" name="Электронная почта" placeholder="E-mail">
+                                                    <textarea class="popup-form__textarea" name="сообщение" placeholder="Ваше сообщение"></textarea>
+                                                    <button class="popup-form__btn btn" type="submit">Отправить сообщение</button>
+                                                </fieldset>
+                                            </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal-end -->
         
                         </div>
     
@@ -101,7 +129,7 @@
                         <ul class="pagination__list">
     
                             <li class="pagination__item">
-                                <a href="#" class="pagination__link">
+                                <a href="index.html" class="pagination__link">
                                     Главная
                                 </a>
                             </li>
@@ -121,68 +149,68 @@
                             <div class="year"><span>2017</span></div>
                             
                         
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-1.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-1.jpg);">
                                     <b>Юбилей АО"ВИСКО"</b>
                                     <time datetime="2022-12-17 19:00">17 декабря</time>
                                 </a>
                            
                            
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-2.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-2.jpg);">
                                     <b>ЖК «Жемчужный Берег»</b>
                                     <time datetime="2022-07-19 19:00">19 июня</time>
                                 </a>
                         
                            
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-3.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-3.jpg);">
                                     <b>«Торговый комплекс К-Раута»</b>
                                     <time datetime="2022-06-01 19:00">1 июня</time>
                                 </a>
     
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-4.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-4.jpg);">
                                     <b>Производственно-складской комплекс ЗАО «Петербург Продактс Интернешнл ЗАО»</b>
                                     <time datetime="2022-05-26 19:00">26 мая</time>
                                 </a>
 
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-5.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-5.jpg);">
                                     <b>Многоквартирный жилой комплекс Skandi Klubb</b>
                                     <time datetime="2022-04-24 19:00">24 апреля</time>
                                 </a>
 
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-6.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-6.jpg);">
                                     <b>Компания ВИСКО проводит семинар для студентов СПбГУ</b>
                                     <time datetime="2022-04-07 19:00">7 апреля</time>
                                 </a>
 
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-7.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-7.jpg);">
                                     <b>«Рынок Никольский»</b>
                                     <time datetime="2022-04-04 19:00">4 апреля</time>
                                 </a>
 
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-8.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-8.jpg);">
                                     <b>Привлечение вертолета к работам на ЖК «Ленинский парк»</b>
                                     <time datetime="2022-03-13 19:00">13 марта</time>
                                 </a>
 
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-9.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-9.jpg);">
                                     <b>Женский коллектив ВИСКО поздравляет мужчин с 23 февраля!</b>
                                     <time datetime="2022-02-23 19:00">23 февраля</time>
                                 </a>
 
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-10.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-10.jpg);">
                                     <b>О ходе работ на объекте ЖК «Ленинский парк»</b>
                                     <time datetime="2022-02-20 19:00">20 февраля</time>
                                 </a>
 
-                                <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-11.jpg);">
+                                <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2017/press-center-11.jpg);">
                                     <b>Инженерный клуб UPONOR: теперь и на песке!</b>
                                     <time datetime="2022-01-20 19:00">20 января</time>
                                 </a>
                       
                         </div>
 
-                        <a class="press-center__hidden btn btn__hidden">
+                        <button class="press-center__hidden btn btn__hidden">
                             Показать все
-                        </a>
+                        </button>
 
                         <div class="box__visible">
 
@@ -191,119 +219,119 @@
                                 <div class="year"><span>2016</span></div>
                                 
                             
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-1.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-1.jpg);">
                                         <b>«Фотоконкурс ВИСКО – 2016»</b>
                                         <time>19 декабря</time>
                                     </a>
                                
                                
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-2.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-2.jpg);">
                                         <b>Футбольные традиции ВИСКО</b>
                                         <time>14 декабря</time>
                                     </a>
                             
                                
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-3.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-3.jpg);">
                                         <b>Итоги турнира по большому теннису «VISKO CUP — 2016»</b>
                                         <time>7 октября</time>
                                     </a>
         
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-4.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-4.jpg);">
                                         <b>Стартовали работы на новом объекте ВИСКО</b>
                                         <time>23 августа</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-5.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-5.jpg);">
                                         <b>«День спортивного строителя — 2016»</b>
                                         <time>23 августа</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-6.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-6.jpg);">
                                         <b>Во Дворце труда наградили сотрудников «ВИСКО»</b>
                                         <time>29 июля</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-7.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-7.jpg);">
                                         <b>Компания «ВИСКО» приступает к работам на новом объекте</b>
                                         <time>22 июля</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-8.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-8.jpg);">
                                         <b>Чествование победителей Конкурса профессионального мастерства</b>
                                         <time>18 июля</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-9.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-9.jpg);">
                                         <b>В Санкт-Петербурге началась подготовка к празднованию Дня Строителя – 2016</b>
                                         <time>30 июня</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-10.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-10.jpg);">
                                         <b>Компания «ВИСКО» поздравляет с открытием Союз экспертиз Северо-Запада!</b>
                                         <time>27 мая</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-11.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-11.jpg);">
                                         <b>Сотрудники «ВИСКО» прошли обучение новому стандарту</b>
                                         <time>27 мая</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-12.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-12.jpg);">
                                         <b>Компания «ВИСКО» становится членом Финско-Российской торговой промышленной палаты!</b>
                                         <time>27 мая</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-13.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-13.jpg);">
                                         <b>Инженерные работы «ВИСКО» признаны технически уникальными</b>
                                         <time>21 апреля</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-14.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-14.jpg);">
                                         <b>«ВИСКО» — в финале «Строитель года – 2015»!</b>
                                         <time>21 апреля</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-15.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-15.jpg);">
                                         <b>«Хорошие игроки находятся там, где шайба. Великие – там, где она будет»</b>
                                         <time>11 апреля</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-16.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-16.jpg);">
                                         <b>Игра для команды</b>
                                         <time>31 марта</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-17.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-17.jpg);">
                                         <b>Всегда быть в авангарде!</b>
                                         <time>24 марта</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-18.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-18.jpg);">
                                         <b>Футбольный диалог</b>
                                         <time>23 марта</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-19.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-19.jpg);">
                                         <b>С 8 марта, наши милые и прекрасные!</b>
                                         <time>4 марта</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-20.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-20.jpg);">
                                         <b>С Днем защитника Отечества!!</b>
                                         <time>23 февраля</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-21.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-21.jpg);">
                                         <b>Ярославль — «Локомотив»</b>
                                         <time>20 февраля</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-22.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-22.jpg);">
                                         <b>«РЦА ВИСКО» — 10 лет в строю!</b>
                                         <time>15 февраля</time>
                                     </a>
 
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-23.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2016/press-center-23.jpg);">
                                         <b>Место, где лечат сердца</b>
                                         <time>11 января</time>
                                     </a>
@@ -315,19 +343,19 @@
                                 <div class="year"><span>2015</span></div>
                                 
                             
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-1.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-1.jpg);">
                                         <b>«ВИСКО» — Национальный знак качества!</b>
                                         <time>27 декабря</time>
                                     </a>
                                
                                
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-2.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-2.jpg);">
                                         <b>«ВИСКО» дарит детям праздник!</b>
                                         <time>21 декабря</time>
                                     </a>
                             
                                
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-3.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-3.jpg);">
                                         <b>С Днём рождения, ВИСКО!</b>
                                         <time>17 декабря</time>
                                     </a>
@@ -337,17 +365,17 @@
                                         <time>20 ноября</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-5.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-5.jpg);">
                                         <b>«Николаевский ансамбль»: старт дан!</b>
                                         <time>17 ноября</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-6.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-6.jpg);">
                                         <b>СТРОЙМАСТЕР-2015 подводит итоги</b>
                                         <time>11 ноября</time>
                                     </a>
     
-                                    <a href="#" class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-7.jpg);">
+                                    <a class="press-center__link" style="background-image: url(images/press-center/press-center-all/press-center-2015/press-center-7.jpg);">
                                         <b>«Счастье по-фински», ЖК SAMPO</b>
                                         <time>9 октября</time>
                                     </a>
@@ -370,10 +398,10 @@
                         </div>
                         <div class="footer__phone">
                             <span>Центральный офис:</span>
-                            <a href="tel:78123241936" class="footer__phone-link">+7 (812) 324-19-36</a>
+                            <a href="tel:78123241936" aria-label="Набрать мобильный номер телефона обратной связи" class="footer__phone-link">+7 (812) 324-19-36</a>
                         </div>
                         <div class="footer__developer developer">
-                            <a href="#" class="footer__dev-link">
+                            <a href="https://github.com/AlexLancev" aria-label="Ссылка на профиль в гитхаб, разработчика этого сайта" class="footer__dev-link">
                                 Разработка AlexLanc
                             </a>
                         </div>
@@ -387,6 +415,11 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/scroll-animation.js"></script>
+        <script src="js/scroll-menu.js"></script>
+        <script src="js/visible-content.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/tabs.js"></script>
         <script src="js/main.js"></script>
 
     </body>
